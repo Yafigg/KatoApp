@@ -144,13 +144,6 @@ KATO APP
 Petani/Pengepul → Gudang In → Produksi → Gudang Out → Marketing/Sales → Customer/User
       ↓                ↓           ↓           ↓              ↓              ↓
    Supply          Receiving    Process    Storing      Selling        Consuming
-
-   Produksi ──────────────────┐
-      ↓                       │
-   Marketing/Sales ───────────┼──→ Manajemen → DIREKTUR
-      ↓                       │
-   Reporting & Analytics      │
-      └───────────────────────┘
 ```
 
 ### 🔗 Alur Data
@@ -176,8 +169,8 @@ Petani/Pengepul → Gudang In → Produksi → Gudang Out → Marketing/Sales �
 
 #### **3️⃣ Produksi (Process)**
 
-- **Fungsi**: Pengolahan produk sesuai standar
-- **Proses**: Sorting, grading, packaging
+- **Fungsi**: Pengolahan produk sesuai standar permintaan
+- **Proses**: Sorting, grading, pengeringan, penepungan, pengecekan kualitas, packaging
 - **Output**: Produk jadi yang siap disimpan
 
 #### **4️⃣ Gudang Out (Storing)**
@@ -198,27 +191,15 @@ Petani/Pengepul → Gudang In → Produksi → Gudang Out → Marketing/Sales �
 - **Input**: Feedback dan demand
 - **Output**: Market intelligence
 
-#### **7️⃣ Manajemen**
-
-- **Fungsi**: Oversight dan control
-- **Input**: Data dari Produksi dan Marketing/Sales
-- **Output**: Strategic decisions dan reporting
-
-#### **8️⃣ DIREKTUR**
-
-- **Fungsi**: Strategic leadership
-- **Input**: Laporan dari Manajemen
-- **Output**: Company direction dan policies
-
 ---
 
 ## 👤 ROLE 3: CUSTOMER/USER (END CONSUMER)
 
 ### 📱 Dashboard Utama
 
-- **Header**: Profile user, order history, preferences
-- **Quick Stats**: Total orders, total spent, loyalty points
-- **Quick Actions**: Browse Products, Place Order, Track Delivery, Give Feedback
+- **Header**: Profile user, order history, preferences, dietary restrictions, health goals
+- **Quick Stats**: Total orders, total spent, loyalty points, health score, favorite products
+- **Quick Actions**: Browse Products, Place Order, Track Delivery, Give Feedback, View Recipes, Check Nutrition
 
 ### 🔧 Fitur Utama
 
@@ -256,6 +237,30 @@ Petani/Pengepul → Gudang In → Produksi → Gudang Out → Marketing/Sales �
 - **Billing History**: Riwayat pembayaran
 - **Invoice Download**: Download invoice resmi
 - **Refund Process**: Proses pengembalian dana
+
+#### 6. 🥗 Product Information & Education
+
+- **Nutritional Info**: Informasi nutrisi lengkap
+- **Cooking Instructions**: Cara memasak dan menyajikan
+- **Storage Tips**: Tips penyimpanan produk
+- **Product Benefits**: Manfaat kesehatan produk
+- **Recipe Suggestions**: Ide resep menggunakan produk
+
+#### 7. 🎁 Loyalty & Rewards
+
+- **Loyalty Points**: Sistem point untuk pembelian
+- **Rewards Program**: Hadiah dan diskon khusus
+- **Referral System**: Bonus untuk mengajak teman
+- **Birthday Rewards**: Hadiah ulang tahun
+- **Seasonal Promotions**: Promosi musiman
+
+#### 8. 📱 Smart Features
+
+- **Smart Recommendations**: Rekomendasi produk AI
+- **Dietary Preferences**: Pengaturan preferensi diet
+- **Allergy Alerts**: Peringatan alergi
+- **Expiry Reminders**: Pengingat kadaluarsa
+- **Reorder Suggestions**: Saran reorder otomatis
 
 ---
 
