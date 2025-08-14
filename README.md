@@ -21,8 +21,12 @@ KATO APP
 ├── 🚪 Role-Based Access Control
 └── 👥 3 Peran Utama:
     ├── 👨‍🌾 Pengepul/Petani (Supplier)
-    ├── 🏭 Gudang (Warehouse)
-    └── 👔 Management
+    ├── 🏭 Management (Internal Operations)
+    │   ├── 📥 Gudang In (Receiving)
+    │   ├── ⚙️ Produksi (Process)
+    │   ├── 📤 Gudang Out (Storing)
+    │   └── 💰 Marketing/Sales
+    └── 👤 Customer/User (End Consumer)
 ```
 
 ---
@@ -74,112 +78,79 @@ KATO APP
 
 ---
 
-## 🏭 ROLE 2: GUDANG (WAREHOUSE)
+## 🏭 ROLE 2: MANAGEMENT (INTERNAL OPERATIONS)
 
 ### 📱 Dashboard Utama
 
-- **Header**: Info gudang, status kapasitas, notifikasi
-- **Statistik Cepat**: Total inventori, pesanan pending, ruang tersedia
-- **Aksi Cepat**: Terima Stok, Proses Pesanan, Generate Laporan
+- **Header**: Overview operasional, status semua departemen, notifikasi
+- **Statistik Cepat**: Total inventori, status produksi, pesanan pending, revenue
+- **Quick Actions**: Monitor Gudang, Kontrol Produksi, Kelola Sales, Generate Laporan
 
 ### 🔧 Fitur Utama
 
-#### 1. 📥 Stok Masuk
+#### 1. 📥 Gudang In (Receiving)
 
 - **Terima dari Supplier**: Pengecekan kualitas, verifikasi kuantitas
 - **Inspeksi Stok**: Grading kualitas, penilaian kerusakan
 - **Penempatan Penyimpanan**: Alokasi lokasi, zona suhu
 - **Dokumentasi**: Bukti terima, sertifikat kualitas, invoice
 
-#### 2. 📤 Stok Keluar
+#### 2. ⚙️ Produksi (Process)
 
-- **Proses Pesanan**: Operasi pick and pack
-- **Manajemen Pengiriman**: Penjadwalan pengiriman, perencanaan rute
-- **Alokasi Inventori**: Reservasi stok, manajemen FIFO
-- **Kontrol Kualitas**: Inspeksi akhir sebelum pengiriman
+- **Pengolahan Produk**: Sorting, grading, packaging
+- **Quality Control**: Standar kualitas, inspeksi proses
+- **Resource Management**: Manajemen bahan baku, peralatan
+- **Production Planning**: Jadwal produksi, kapasitas mesin
 
-#### 3. 📦 Manajemen Inventori
+#### 3. 📤 Gudang Out (Storing)
 
-- **Level Stok Real-time**: Kuantitas saat ini, lokasi
-- **Optimasi Penyimpanan**: Utilisasi ruang, penempatan produk
-- **Rotasi Stok**: Manajemen kadaluarsa, kontrol kesegaran
-- **Penghitungan Inventori**: Audit rutin, resolusi diskrepansi
+- **Penyimpanan Produk Jadi**: Lokasi optimal, kondisi lingkungan
+- **Monitoring Lingkungan**: Sensor suhu, kelembapan, ventilasi
+- **Quality Preservation**: Kontrol kesegaran, pencegahan kerusakan
+- **Stock Management**: Rotasi stok, manajemen kadaluarsa
+- **Inventory Control**: Audit rutin, tracking real-time
 
-#### 4. 🚚 Logistik
+#### 4. 💰 Marketing/Sales
 
-- **Manajemen Pengiriman**: Optimasi rute, penugasan driver
-- **Tracking Kendaraan**: Monitoring GPS, status pengiriman
-- **Komunikasi Pelanggan**: Update pengiriman, notifikasi ETA
-- **Manajemen Retur**: Produk cacat, komplain pelanggan
+- **Order Management**: Proses pesanan, customer service
+- **Sales Analytics**: Performance tracking, revenue analysis
+- **Customer Relationship**: Database pelanggan, feedback management
+- **Pricing Strategy**: Manajemen harga, diskon, promosi
 
 #### 5. ⚙️ Operasional
 
-- **Metrik Performa**: Tingkat fulfillment pesanan, waktu pengiriman
-- **Analisis Biaya**: Biaya penyimpanan, biaya handling
-- **Perencanaan Kapasitas**: Kebutuhan ruang, kebutuhan ekspansi
-- **Performa Supplier**: Rating kualitas, reliabilitas pengiriman
+- **Metrik Performa**: Tingkat fulfillment pesanan, efisiensi produksi
+- **Analisis Biaya**: Biaya operasional, margin keuntungan
+- **Perencanaan Kapasitas**: Kebutuhan sumber daya, ekspansi
+- **Performa Supplier**: Rating kualitas, reliabilitas supply
+
+#### 6. 🌡️ Monitoring Lingkungan Gudang
+
+- **Sensor Suhu**: Monitoring suhu real-time, alert suhu ekstrem
+- **Sensor Kelembapan**: Kontrol kelembapan optimal, pencegahan jamur
+- **Sistem Ventilasi**: Otomatisasi ventilasi berdasarkan kondisi
+- **Alert Lingkungan**: Notifikasi kondisi gudang tidak optimal
+- **Log Lingkungan**: Riwayat perubahan suhu dan kelembapan
 
 ---
-
-## 👔 ROLE 3: MANAGEMENT
-
-### 📱 Dashboard Utama
-
-- **Header**: Overview perusahaan, metrik kunci, alert
-- **Ringkasan Eksekutif**: Pendapatan, pertumbuhan, efisiensi operasional
-- **Aksi Cepat**: Lihat Laporan, Kelola User, Pengaturan Sistem
-
-### 🔧 Fitur Utama
-
-#### 1. 📈 Business Intelligence
-
-- **Overview Perusahaan**: Pendapatan, keuntungan, metrik pertumbuhan
-- **Analisis Pasar**: Tren industri, analisis kompetitor
-- **Dashboard Performa**: Tracking KPI, pencapaian tujuan
-- **Forecasting**: Prediksi penjualan, perencanaan permintaan
-
-#### 2. 👥 Manajemen User
-
-- **Manajemen Role**: Buat, edit, hapus role user
-- **Kontrol Permission**: Akses fitur, visibilitas data
-- **Analitik User**: Tracking aktivitas, metrik performa
-- **Pengaturan Keamanan**: Kebijakan password, log akses
-
-#### 3. 💰 Manajemen Keuangan
-
-- **Tracking Pendapatan**: Penjualan berdasarkan produk, pelanggan, wilayah
-- **Analisis Biaya**: Biaya operasional, margin keuntungan
-- **Manajemen Budget**: Perencanaan, monitoring, analisis varians
-- **Laporan Keuangan**: P&L, balance sheet, cash flow
-
-#### 4. 🔧 Administrasi Sistem
-
-- **Pengaturan Sistem**: Konfigurasi aplikasi, integrasi
-- **Manajemen Data**: Backup, restore, migrasi data
-- **Manajemen API**: Integrasi pihak ketiga, webhooks
-- **Monitoring Sistem**: Performa, uptime, log error
-
-#### 5. 📋 Compliance & Pelaporan
-
-- **Regulatory Compliance**: Standar industri, persyaratan legal
-- **Audit Trail**: Aksi user, perubahan data, log sistem
-- **Manajemen Dokumen**: Kebijakan, prosedur, sertifikasi
-- **Manajemen Risiko**: Penilaian risiko, strategi mitigasi
 
 ---
 
 ## 🔄 WORKFLOW INTEGRASI
 
-### 🌾 Alur Supply Chain
+### 🌾 Alur Supply Chain (Berdasarkan Flowchart)
 
 ```
-Petani → Gudang → Management
-  ↓         ↓         ↓
-Produksi → Simpan → Monitor
-  ↓         ↓         ↓
-Kirim → Ekspedisi → Analisis
-  ↓         ↓         ↓
-Invoice → Track → Laporan
+Petani/Pengepul → Gudang In → Produksi → Gudang Out → Marketing/Sales → Customer/User
+      ↓                ↓           ↓           ↓              ↓              ↓
+   Supply          Receiving    Process    Storing      Selling        Consuming
+
+   Produksi ──────────────────┐
+      ↓                       │
+   Marketing/Sales ───────────┼──→ Manajemen → DIREKTUR
+      ↓                       │
+   Reporting & Analytics      │
+      └───────────────────────┘
 ```
 
 ### 🔗 Alur Data
@@ -188,6 +159,103 @@ Invoice → Track → Laporan
 - **Notifikasi Otomatis**: Alert, reminder, update
 - **Sinkronisasi Data**: Berbagi informasi antar role
 - **Audit Trail**: Riwayat transaksi lengkap
+
+### 📋 Detail Workflow Berdasarkan Flowchart:
+
+#### **1️⃣ Petani/Pengepul (Supplier)**
+
+- **Fungsi**: Supply bahan baku ke gudang
+- **Output**: Produk pertanian segar
+- **Kontrol**: Kualitas dan kuantitas supply
+
+#### **2️⃣ Gudang In (Receiving)**
+
+- **Fungsi**: Menerima dan inspeksi produk dari supplier
+- **Proses**: Quality check, quantity verification
+- **Output**: Produk yang siap diproses
+
+#### **3️⃣ Produksi (Process)**
+
+- **Fungsi**: Pengolahan produk sesuai standar
+- **Proses**: Sorting, grading, packaging
+- **Output**: Produk jadi yang siap disimpan
+
+#### **4️⃣ Gudang Out (Storing)**
+
+- **Fungsi**: Penyimpanan produk jadi
+- **Monitoring**: Suhu, kelembapan, ventilasi
+- **Output**: Produk tersimpan dengan kondisi optimal
+
+#### **5️⃣ Marketing/Sales**
+
+- **Fungsi**: Penjualan dan distribusi
+- **Proses**: Order processing, customer service
+- **Output**: Revenue dan customer satisfaction
+
+#### **6️⃣ Customer/User**
+
+- **Fungsi**: End consumer
+- **Input**: Feedback dan demand
+- **Output**: Market intelligence
+
+#### **7️⃣ Manajemen**
+
+- **Fungsi**: Oversight dan control
+- **Input**: Data dari Produksi dan Marketing/Sales
+- **Output**: Strategic decisions dan reporting
+
+#### **8️⃣ DIREKTUR**
+
+- **Fungsi**: Strategic leadership
+- **Input**: Laporan dari Manajemen
+- **Output**: Company direction dan policies
+
+---
+
+## 👤 ROLE 3: CUSTOMER/USER (END CONSUMER)
+
+### 📱 Dashboard Utama
+
+- **Header**: Profile user, order history, preferences
+- **Quick Stats**: Total orders, total spent, loyalty points
+- **Quick Actions**: Browse Products, Place Order, Track Delivery, Give Feedback
+
+### 🔧 Fitur Utama
+
+#### 1. 🛒 Product Browsing
+
+- **Katalog Produk**: Lihat semua produk tersedia
+- **Filter & Search**: Cari berdasarkan kategori, harga, rating
+- **Product Details**: Informasi lengkap, foto, review
+- **Wishlist**: Simpan produk favorit
+
+#### 2. 📦 Order Management
+
+- **Place Order**: Pilih produk, quantity, delivery address
+- **Order Tracking**: Status pesanan real-time
+- **Order History**: Riwayat semua pesanan
+- **Order Status**: Pending, Processing, Shipped, Delivered
+
+#### 3. 🚚 Delivery Tracking
+
+- **Real-time Tracking**: Lokasi pengiriman, ETA
+- **Delivery Updates**: Notifikasi status pengiriman
+- **Delivery Preferences**: Waktu pengiriman, instruksi khusus
+- **Contact Driver**: Komunikasi langsung dengan driver
+
+#### 4. 💬 Feedback & Support
+
+- **Product Reviews**: Rating dan review produk
+- **Customer Support**: Chat dengan customer service
+- **Issue Reporting**: Laporkan masalah produk/pengiriman
+- **Suggestions**: Saran untuk improvement
+
+#### 5. 💳 Payment & Billing
+
+- **Payment Methods**: Cash, transfer, e-wallet
+- **Billing History**: Riwayat pembayaran
+- **Invoice Download**: Download invoice resmi
+- **Refund Process**: Proses pengembalian dana
 
 ---
 
@@ -288,6 +356,14 @@ Invoice → Track → Laporan
 - Notification system
 - Search dan filter functionality
 
+### 🌡️ Monitoring & IoT Features
+
+- **Sensor Integration**: Suhu, kelembapan, ventilasi
+- **Real-time Monitoring**: Kondisi gudang 24/7
+- **Automated Alerts**: Notifikasi kondisi tidak optimal
+- **Environmental Control**: Otomatisasi sistem ventilasi
+- **Data Logging**: Riwayat perubahan lingkungan
+
 ---
 
 ## 🎯 Target Pengguna
@@ -298,17 +374,25 @@ Invoice → Track → Laporan
 - Pengepul hasil pertanian
 - Supplier produk pertanian
 
-### 🏭 Gudang
+### 🏭 Management (Internal Operations)
 
-- Warehouse manager
-- Staff gudang
-- Logistic coordinator
+- **Gudang In**: Receiving staff, quality inspector
+- **Produksi**: Production manager, operator mesin
+- **Gudang Out**: Warehouse manager, inventory controller
+- **Marketing/Sales**: Sales manager, customer service
 
-### 👔 Management
+### 👔 Management (Internal Operations)
 
-- Business owner
-- Operations manager
-- Financial controller
+- **Gudang In**: Receiving staff, quality inspector
+- **Produksi**: Production manager, operator mesin
+- **Gudang Out**: Warehouse manager, inventory controller
+- **Marketing/Sales**: Sales manager, customer service
+
+### 👤 Customer/User
+
+- End consumer (B2C)
+- Business customer (B2B)
+- Reseller/Retailer
 
 ---
 
@@ -321,19 +405,23 @@ Invoice → Track → Laporan
 - **Prediksi Cuaca**: Perencanaan tanam yang lebih akurat
 - **Tracking Keuangan**: Monitoring pendapatan dan pengeluaran
 
-### 🏭 Bagi Gudang
+### 🏭 Bagi Management (Internal Operations)
 
-- **Optimasi Inventori**: Manajemen stok yang efisien
-- **Tracking Real-time**: Monitoring pengiriman dan penerimaan
+- **Operational Efficiency**: Efisiensi semua departemen
 - **Quality Control**: Standar kualitas yang konsisten
 - **Cost Reduction**: Pengurangan biaya operasional
+- **Environmental Control**: Monitoring suhu, kelembapan, ventilasi otomatis
+- **Product Preservation**: Mencegah kerusakan produk karena kondisi lingkungan
+- **Energy Efficiency**: Optimasi penggunaan energi berdasarkan kebutuhan
+- **Integrated Management**: Kontrol terpusat semua operasi
 
-### 👔 Bagi Management
+### 👤 Bagi Customer/User
 
-- **Business Intelligence**: Data untuk pengambilan keputusan
-- **Operational Efficiency**: Peningkatan produktivitas
-- **Risk Management**: Identifikasi dan mitigasi risiko
-- **Growth Strategy**: Perencanaan ekspansi bisnis
+- **Easy Shopping**: Belanja produk dengan mudah dan cepat
+- **Product Quality**: Jaminan kualitas produk terbaik
+- **Transparent Pricing**: Harga yang jelas dan kompetitif
+- **Excellent Service**: Layanan customer service yang responsif
+- **Fast Delivery**: Pengiriman cepat dan tracking real-time
 
 ---
 
@@ -342,7 +430,9 @@ Invoice → Track → Laporan
 ### 🌟 Fitur Lanjutan
 
 - **AI Integration**: Machine learning untuk prediksi
-- **IoT Integration**: Sensor cuaca dan tanah
+- **IoT Integration**: Sensor cuaca, tanah, dan gudang
+- **Environmental Monitoring**: Real-time monitoring suhu, kelembapan, ventilasi
+- **Smart Warehouse**: Otomatisasi sistem gudang berdasarkan kondisi
 - **Blockchain**: Transparansi supply chain
 - **Mobile Payments**: Integrasi pembayaran digital
 
@@ -359,21 +449,21 @@ Invoice → Track → Laporan
 
 ### 👥 Tim Development
 
-- **Lead Developer**: [Nama Developer]
-- **UI/UX Designer**: [Nama Designer]
-- **Project Manager**: [Nama PM]
+- **Lead Developer**: Throner
+- **UI/UX Designer**: Gearfifth
+- **Project Manager**: ThroGear
 
 ### 📧 Kontak
 
 - **Email**: support@katoapp.com
-- **Website**: www.katoapp.com
-- **Phone**: +62 XXX XXX XXX
+- **Website**: www.katodehydratedfoods.com
+- **Phone**: +62 823 3215 7347
 
 ---
 
 ## 📄 Lisensi
 
-Aplikasi ini dikembangkan untuk [Nama Perusahaan] dan dilindungi oleh hak cipta. Semua hak dilindungi.
+Aplikasi ini dikembangkan untuk PT Aghnia Dahar Klimah dan dilindungi oleh hak cipta. Semua hak dilindungi.
 
 ---
 
@@ -383,5 +473,5 @@ Terima kasih kepada semua stakeholder yang telah berkontribusi dalam pengembanga
 
 ---
 
-_Dokumen ini terakhir diperbarui pada: [Tanggal]_
+_Dokumen ini terakhir diperbarui pada: 14 August 2025_
 _Versi: 1.0.0_
